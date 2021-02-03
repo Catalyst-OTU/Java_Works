@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+
+    
+                  <form class="applyleave.jsp" action="" method="post">
+    
+                        <label for="">Enter Employee ID</label>
+                      <input type="text" name="empid" required>
+
+
+                        <label for="">Date of Leave</label>
+                      <input type="date" name="applydate" required>
+
+
+                    <label for="">Reason</label>
+                    <textarea type="text" name="reason" col="10" row="30" placeholder="Please enter reason........"></textarea>
+
+
+                        <label for="">Date to Resume</label>
+                      <input type="date" name="resumedate" required>
+
+                    <button type="submit">Submit</button>
+                    <hr>
+                    <p>Return to Homepage <a href="register_emp.jsp">Home Page</a></p>
+                </form>
+                 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+    
+    </div>
+
+</body>
+</html>

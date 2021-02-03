@@ -1,0 +1,85 @@
+package student_mgt_system;
+
+import java.sql.*;
+import java.util.*;
+
+public class Student {
+
+   private int studentid;
+   private String studentName;
+   private String address;
+   private String studentClass;
+   private int marks;
+   
+    Connection connection;
+    PreparedStatement preparedStatement;
+	//String url = "jdbc:mysql://localhost:3306/mydb";
+	//String sql = "insert into studentmgt values (?,?,?,?,?);";
+	
+	public Student () throws SQLException {
+		
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb");
+		
+		preparedStatement = connection.prepareStatement("insert into studentmgt values (?,?,?,?,?);");
+		
+
+	}
+
+	
+	public void addStudent() throws SQLException  {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter Student ID :" );
+		studentid = input.nextInt();
+		System.out.println("Enter Student Name : ");
+		studentName = input.next();
+		System.out.println("Enter Address : ");
+		address = input.next();
+		System.out.println("Enter Class : ");
+		studentClass = input.next();
+		System.out.println("Enter Marks ;" );
+		marks = input.nextInt(); 
+		
+		preparedStatement.setInt(1, studentid);
+		preparedStatement.setString(2, studentName);
+		preparedStatement.setString(3, address);
+		preparedStatement.setString(4, studentClass);
+		preparedStatement.setInt(5, marks);
+		preparedStatement.execute();
+		System.out.println("Record Inserted Successfully...");
+		
+		input.close();
+	}
+	
+	
+	
+	
+	
+	public void updateAddress (String address) {
+		
+		this.address = address;
+	}
+	
+	public void deleteStudent () {
+		
+		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [studentid=" + studentid + ", studentName=" + studentName + ", address=" + address
+				+ ", studentClass=" + studentClass + ", marks=" + marks + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

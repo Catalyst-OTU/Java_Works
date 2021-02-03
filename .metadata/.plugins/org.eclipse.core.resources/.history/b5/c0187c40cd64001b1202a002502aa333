@@ -1,0 +1,84 @@
+package com.aiti.model;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.sql.DataSource;
+import com.aiti.entities.Student;
+
+
+public class StudentModel {
+	
+	public List<Student> listAllStudent(DataSource datasource){
+		
+		List<Student> listStudents = new ArrayList<>();
+		
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			
+			conn = datasource.getConnection();
+			stmt = conn.createStatement();
+			String sql = "Select * from students";
+			
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				
+listStudents.add(new Student(rs.getInt("student_id"), rs.getString("firstName"), rs.getString("lastName"), rs.getString("email")));
+			}
+					
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+		return listStudents;
+		
+	} 
+	
+	
+	
+	
+public void AddNewStudent(DataSource datasource, Student newStudent) {
+		
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		String url = "jdbc:mysql://localhost:3306/student-mgt";
+		
+		try {
+			
+			conn = DriverManager.getConnection(url, "root", "catalyst1006");
+			
+			conn = datasource.getConnection();
+			
+			String firstName = newStudent.getFirstName();
+			String lastName = newStudent.getLastName();
+			String email = newStudent.getEmail();
+			
+			String query = "insert into students(firstName,lastName,email) values(?,?,?)";
+			
+			stmt = conn.prepareStatement(query);
+			stmt.setString(1, firstName);
+			stmt.setString(2, lastName);
+			stmt.setString(3, email);
+			stmt.execute();
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+
+		
+	}
+	
+
+	
+	
+}

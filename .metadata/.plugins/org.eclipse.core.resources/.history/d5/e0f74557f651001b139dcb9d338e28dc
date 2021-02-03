@@ -1,0 +1,9 @@
+package tester;
+
+public class Price_Menu {
+
+	public Price_Menu() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

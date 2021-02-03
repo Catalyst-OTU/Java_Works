@@ -1,0 +1,9 @@
+package trials;
+
+public class Basics1 {
+
+	public Basics1() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

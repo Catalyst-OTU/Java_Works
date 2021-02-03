@@ -1,0 +1,35 @@
+package trials;
+
+import java.util.*;
+
+public class Tester {
+
+	public Tester() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+		String[] cars = new String[3];
+		
+		cars[0] = "BMW";
+		cars[1] = "CAMARO";
+		cars[2] = "BENZ";
+		
+		for(int i = 0; i < cars.length; i++) {
+			System.out.println(i);
+		}
+		
+//		Basics1 ob = new Basics1();
+//		
+//		ob.getBasics1().msg();
+		
+//		Random random = new Random();
+//		
+//		int x = random.nextInt();
+//		
+//		System.out.println(x);
+		
+	}
+
+}

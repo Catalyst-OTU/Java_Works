@@ -1,0 +1,104 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+	    <style>
+        .conatiner{
+            margin-left: 500px; 
+                  margin-top: 70px;
+                  background-color: aqua;
+                  border-radius: 20px;
+                  width: 300px;
+                  padding: 30px;
+        
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="conatiner">
+
+        <h2>REGISTRATION FORM</h2>
+    
+    <form action="info.jsp" method="get">
+
+		<table>
+			<tr>
+				<td>Username :</td>
+				<td><input type="text" name="username" placeholder="Enter your name" required></td>
+			</tr>
+
+			<tr>
+				<td>Email :</td>
+				<td><input type="email" name="email" placeholder="Enter your email" required></td>
+			</tr>
+
+			<tr>
+				<td>Phone :</td>
+				<td><input type="number" name="phone" placeholder="Enter your phone" required></td>
+			</tr>
+
+			<tr>
+				<td>Address :</td>
+				<td><input type="text" name="address" placeholder="Enter your address" required></td>
+			</tr>
+
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="Male"> Male
+					 <input type="radio" name="gender" value="Female"> Female
+			    </td>
+			</tr>
+
+			<tr>
+				<td> Education </td>
+				<td>
+					<select name="education" required>
+                    <option value="">Select One</option>
+					<option value="SHS"> SHS </option>
+					<option value="DIPLOMA"> DIPLOMA </option>
+					<option value="DEGREE"> DEGREE </option>
+					<option value="MASTERS"> MASTERS </option>
+		            </select>
+		        </td>
+			</tr>
+			
+			<tr>
+			
+				<td> Password :</td>
+				<td><input type="password" name="password" placeholder="Enter your password" required></td>
+			</tr>
+
+			<tr>
+				<td> Confirm Password :</td>
+				<td><input type="password" name="conpassword" placeholder="Confirm password" required></td>
+            </tr>
+
+            <tr>
+               <th> <input type="checkbox" name="i_agree" value="i_agree" required> I Agree</th>
+            </tr>
+            
+            <tr>
+                <td> <input type="submit" value="Submit"> </td>
+                <td> <input type="reset" value="Reset"> </td>
+            </tr>
+
+
+            
+			
+		
+
+		</table>
+
+
+    </form>
+    
+</div>
+
+</body>
+</html>

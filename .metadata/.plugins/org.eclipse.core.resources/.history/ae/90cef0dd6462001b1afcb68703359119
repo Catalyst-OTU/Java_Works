@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Change Password</title>
+
+</head>
+<body>
+
+	<h1>Change Password!</h1>
+
+	<hr>
+
+	<form action="changepass.jsp" method="post">
+
+
+		<label for="">Password</label> <input type="password" name="pass"
+			placeholder="Enter Password..." required> <br />
+		<br /> <label for="">Confirm Password</label> <input type="password"
+			name="cpass" placeholder="Confirm Password" required> <br />
+		<br />
+		<button type="submit">Login</button>
+		<hr>
+		<p>
+			Back to HomePage? <a href="userpage1.jsp">HomePage</a>
+		</p>
+	</form>
+
+
+</body>
+</html>

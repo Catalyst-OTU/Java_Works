@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3494233438.index
+\JspSession\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2929901036.index
+\Student-MVC\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\11275323.index
+\JSPAssignment\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\151586783.index
+\JSPActions\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3821256357.index
+\jspSession2\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\142819641.index
+\JSPBasics\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1154960370.index
+\tagdemo\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2032392455.index
+\tagdemo\src
+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\660285277.index
+\Student-MVC\src

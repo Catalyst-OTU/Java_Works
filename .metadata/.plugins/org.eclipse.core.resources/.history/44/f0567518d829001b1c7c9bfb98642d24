@@ -1,0 +1,34 @@
+package stattic;
+
+public class Test {
+
+	public Test() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name = "Bismark";
+		String mine = "Bismark";
+		
+		
+		String names = name.toUpperCase();
+		int n = names.compareTo(mine);
+	
+		System.out.println(n);
+		System.out.println(names);
+		System.out.println(names.length());
+		
+		
+		
+		
+		
+		//  STATIC DOES NOT USE AN OBJECT BEFORE OUTING. STATIC USES CLASS TO OUTPUT
+		Stattic.show();
+		System.out.println(Stattic.add(12, 8));
+		System.out.println(Stattic.addition(10, 10));
+
+	}
+
+}

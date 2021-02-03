@@ -1,0 +1,48 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Profile</title>
+</head>
+<body>
+
+<%
+
+try{
+	
+	String id = (String)session.getAttribute("empid");
+	
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "catalyst1006");
+	PreparedStatement ps = conn.prepareStatement("select * from ems_login where empid = ?");
+	ps.setString(1, id);
+	ResultSet rs = ps.executeQuery();
+	
+	if(rs.next()) {
+		
+		
+		
+		
+		out.println("EMPLOYEE ID : " + " " + rs.getString(1) + "<br/>" + "<br/>"); 
+		out.println("USER NAME : " + " " + rs.getString(2) + "<br/>" + "<br/>");
+		out.println("PASSWORD : " + " " + rs.getString(3) + "<br/>" + "<br/>");
+		out.println("EMAIL : " + " " + rs.getString(4));
+	}
+
+	
+}
+
+catch (Exception e) {
+
+	out.println(e.getMessage());
+}
+
+%>
+
+</body>
+</html>

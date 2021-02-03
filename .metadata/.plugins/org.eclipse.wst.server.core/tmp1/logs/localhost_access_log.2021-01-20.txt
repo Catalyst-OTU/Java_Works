@@ -1,0 +1,5 @@
+127.0.0.1 - - [20/Jan/2021:23:37:30 +0000] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [20/Jan/2021:23:39:11 +0000] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [20/Jan/2021:23:39:17 +0000] "GET /JSPBasics/student.html HTTP/1.1" 200 1025
+0:0:0:0:0:0:0:1 - - [20/Jan/2021:23:39:48 +0000] "GET /JSPBasics/student-response.jsp?name=Bisamrk+Otu&gender=Male&language=English&language=Akan&language=Ewe&language=Dagaare&country=Ivory+Coast HTTP/1.1" 200 266
+0:0:0:0:0:0:0:1 - - [20/Jan/2021:23:41:03 +0000] "GET /JSPBasics/student-response.jsp?name=Bisamrk+Otu&gender=Male&language=English&language=Akan&country=Ivory+Coast HTTP/1.1" 200 266

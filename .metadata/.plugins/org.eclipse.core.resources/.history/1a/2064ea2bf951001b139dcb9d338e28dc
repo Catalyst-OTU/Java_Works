@@ -1,0 +1,51 @@
+package tester;
+
+import java.util.*;
+
+
+
+//Display food menu to user. User will select items from menu along with the quantity.
+//Hard code food prices. (eg 1. fufu.......20 2. banku .......10 . Generate Bill ) When user enters 'Generate Bill' option, display total bill & exit.
+//Create above class in "tester" package
+
+
+public class FoodMenu_Tester {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		
+			Scanner input = new Scanner(System.in);
+						
+			Food_Menu foodMenu = new Food_Menu();
+			
+			int Counter = 0;
+			boolean exit = true;
+			
+			while(exit) {
+				
+			System.out.println("Welcome to DiDi Na Tafri Wonsa Food Joint. Please select a Menu \n");
+			System.out.println(" 1. Fufu and Groundnut Soup \n 2. Banku and Okro Stew  \n 3. Rice and Kontomire Stew \n 4. Generate Bill \n 5. Exit");
+			
+			
+			switch(input.nextInt()) {
+			
+					case 1: {
+						 //System.out.println("       MENU                      PRICE");
+						 foodMenu.displayFufu();
+						 
+					}
+			
+			}
+			
+		}
+		
+	
+input.close();
+	
+
+}
+	
+}

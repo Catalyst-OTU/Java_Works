@@ -1,0 +1,27 @@
+package student_mgt_system;
+
+import java.sql.*;
+import java.util.*;
+
+public class Try extends Student {
+	
+
+	//String sql = "insert into studentmgt values ('" + super.studentid + "','"+ super.studentName + "','"+ super.address + "','"+ super.studentClass + "','"+ super.marks + "')";
+	
+
+	public static void main(String[] args) throws SQLException {
+		
+		try {
+		Student student = new Student();
+		
+		
+		
+		
+		}catch(Exception e) {
+			
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

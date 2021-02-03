@@ -1,0 +1,68 @@
+package com.aiti.entities;
+
+public class Student {
+
+	private int studentId;
+	private String firstName;
+	private String LastName;
+	private String email;
+	
+	
+
+
+
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+
+
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+
+	public int getFirstName() {
+		return firstName;
+	}
+
+
+
+	public void setFirstName(int firstName) {
+		this.firstName = firstName;
+	}
+
+
+	public int getLastName() {
+		return LastName;
+	}
+
+
+
+	public void setLastName(int lastName) {
+		LastName = lastName;
+	}
+
+
+
+	public int getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(int email) {
+		this.email = email;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,60 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register User</title>
+</head>
+<body>
+
+	<%
+	String empid = request.getParameter("empid");
+	String user = request.getParameter("user");
+	String pass = request.getParameter("pass");
+	String email = request.getParameter("email");
+	String mobile = request.getParameter("mobile");
+	String address = request.getParameter("address");
+	String education = request.getParameter("education");
+	String deptid = request.getParameter("deptid");
+	String managerid = request.getParameter("managerid");
+
+	try {
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "catalyst1006");
+		PreparedStatement ps = conn.prepareStatement("insert into ems_login values (?,?,?,?)");
+		ps.setString(1, empid);
+		ps.setString(2, user);
+		ps.setString(3, pass);
+		ps.setString(4, email);
+		ps.execute();
+
+		ps = conn.prepareStatement("insert into ems_details values (?,?,?,?,?,?)");
+		ps.setString(1, empid);
+		ps.setString(2, address);
+		ps.setString(3, education);
+		ps.setString(4, mobile);
+		ps.setString(5, deptid);
+		ps.setString(6, managerid);
+		ps.execute();
+		
+		response.sendRedirect("index.hmtl");
+
+	} catch (Exception e) {
+
+		out.println(e.getMessage());
+	}
+	
+	
+	%>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+package collection;
+
+public class NewCompare {
+
+	public NewCompare() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

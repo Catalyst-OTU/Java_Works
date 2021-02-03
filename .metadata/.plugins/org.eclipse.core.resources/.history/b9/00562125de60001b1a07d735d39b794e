@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="StudentRegister" method="get">
+
+		FIRSTNAME: <input type="text" name="firstName" required> <br/> <br/>
+		LASTNAME: <input type="text" name="lastName" required> <br/> <br/>
+		EMAIL ID: <input type="email" name="email" required> <br/> <br/>
+		PASSOWRD: <input type="password" name="pass" required> <br/> <br/>
+		
+		
+		<input type="submit" value="Register">
+
+
+</form>
+
+</body>
+</html>

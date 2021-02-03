@@ -1,0 +1,58 @@
+package student_mgt_system;
+
+import java.sql.SQLException;
+
+public class Student {
+
+    int studentid;
+	String studentName;
+	String address;
+	String studentClass;
+	int marks;
+
+	
+	public void addStudent(int studentid, String studentName, String address, String studentClass, int marks) throws SQLException {
+		
+		this.studentid = studentid;
+		this.studentName = studentName;
+		this.address = address;
+		this.studentClass = studentClass;
+		this.marks = marks;
+		
+//		studentid = preparedStatement.setInt();
+//		preparedStatement.setString(2, "Akeem");
+//		preparedStatement.setString(3, "Amosu");
+//		preparedStatement.setInt(4, 2800);
+	
+//		preparedStatement.executeUpdate();
+//		System.out.println("1 row inserted successfully");
+	}
+	
+	
+	public void updateAddress (String address) {
+		
+		this.address = address;
+	}
+	
+	public void deleteStudent () {
+		
+		
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [studentid=" + studentid + ", studentName=" + studentName + ", address=" + address
+				+ ", studentClass=" + studentClass + ", marks=" + marks + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,18 @@
+package test_runtime;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//System.out.println("Available processors are : " + Runtime.getRuntime().availableProcessors());
+		//System.out.println("Available memory are : " + Runtime.getRuntime().freeMemory());
+		System.out.println("Available total memory are : "+ Runtime.getRuntime().totalMemory());
+
+		
+		
+		
+
+	}
+
+}

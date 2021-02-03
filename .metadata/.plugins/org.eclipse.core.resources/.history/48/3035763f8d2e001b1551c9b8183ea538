@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package wrapper;
+
+/**
+ * @author BISMARK  OTU
+ *
+ */
+public enum Enum {
+
+}

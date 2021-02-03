@@ -1,0 +1,9 @@
+package student_mgt_system;
+
+public class JdbcConnection {
+
+	public JdbcConnection() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

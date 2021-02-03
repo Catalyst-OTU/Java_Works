@@ -1,0 +1,128 @@
+package assign4;
+
+//2.4  Add computeGPA method in Student class
+//Accept 3 scores for quiz , test & assignments
+//GPA should be computed on 20 % of quiz score, 50% of test score & 30% of assignment score.
+//
+//3 Write a TestStudents class in "com.tester" package
+//
+//Accept how many students to enroll in the class ,  from user.
+//
+// Accept student details(w/o gpa) , using loop.
+//Accept student scores & compute GPAs , using loop
+//Display name of student having highest GPA.
+
+import java.util.Scanner;
+
+public class TestStudents {
+	
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("How many Students do you want to Enroll : ");
+
+		int num = input.nextInt();
+
+		Student[] enroll = new Student[num];
+
+		boolean run = true;
+		
+		while(run) {
+			
+			System.out.println("Please choose an option\n");
+			System.out.println(" 1. Enter student details \n 2. Enter student scores \n 3. Display Details of Students \n 4. Display name of student with the highest GPA \n 5. Exit");
+			
+			
+			switch(input.nextInt()) {
+			
+			         case 1: {
+			        	 
+			        	    for(int i = 0; i < num; i++) {
+				        	System.out.println("Please Enter Student Details : name, email, age");
+			        		enroll[i] = new Student(input.next(), input.next(), input.nextInt());
+
+			        	                                 }
+			                };break;
+			                
+			         case 2: {
+			        	 
+			        	    for(int i = 0; i < num; i++) {
+			        	    	
+			        	    
+				        	System.out.println("Please enter Quiz score");
+                            double quiz = input.nextDouble();
+				     
+				     		System.out.println("Please enter Test score");
+				     		double test = input.nextDouble();
+				     		
+				     		System.out.println("Please enter assignment score");
+				     		double assignment = input.nextDouble();
+				     		
+				     		
+				     		double gpa = enroll[i].computeGPA(quiz, test, assignment);
+				    		
+				    		if(gpa > enroll[i++].computeGPA(quiz, test, assignment)) {
+				    			
+				    			System.out.println(enroll[i].getName());
+				    		}
+//				    		else {
+//				    			
+//				    			gpa = enroll[i++].computeGPA(quiz, test, assignment);
+//				    		}
+			        	    }
+			              };break;
+			              
+			              
+			         case 3: {
+			        	 
+			        	 for(Student stud : enroll) {
+			        		 
+			        		 System.out.println(stud.getDetails());
+			        	                            }
+			         };break;
+			         
+			         case 4: {
+			        	 
+			        	    for(int i = 0; i < num; i++) {
+			        	    	
+			        	    	double quiz = 0;
+								double highest_score = quiz;
+			        	    	double test = 0;
+			        	    	double assignment = 0;
+			        	 
+			        	    highest_score = enroll[i].computeGPA(quiz, test, assignment);
+			        	    
+			        	    if( test > highest_score) {
+			        	    	
+			        	    	highest_score = test;
+			        	    	
+			        	    	if(assignment > highest_score) {
+			        	    		
+			        	    		highest_score = assignment;
+			        	    	}
+			        	    	
+			        	    	System.out.println(enroll[i].getName());
+//			        	    	System.out.println(enroll[i].highest_score(highest_score));
+			        	    	
+			        	    }
+			        	    
+			        	                                 }
+			         }
+			         
+			
+			
+			}
+			
+		}
+			
+			
+			
+	}
+	
+	
+
+}

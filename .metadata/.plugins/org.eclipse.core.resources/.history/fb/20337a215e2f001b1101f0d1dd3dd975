@@ -1,0 +1,29 @@
+package collection;
+
+import java.util.*;
+
+public class CollExample {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		List<String> list = new ArrayList<String>();
+		
+		list.add("Bismark");
+		list.add("Nana");
+		list.add("Otu");
+		list.add("Kwesi");
+		list.add(2, "Bisamrk Otu");
+		
+		
+		int s = list.size();
+		System.out.println(s);
+		
+		String str = list.get(2);
+		System.out.println(str);
+
+	}
+
+}

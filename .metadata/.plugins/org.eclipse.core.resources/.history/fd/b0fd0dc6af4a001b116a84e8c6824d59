@@ -1,0 +1,24 @@
+package trials;
+
+public class Basics1 {
+	
+	int rollno;
+	String name;
+	
+	static String college = "Asec";
+	
+	public Basics1(int rollno, String name) {
+		
+		this.rollno = rollno;
+		this.name = name;
+	}
+	
+	public void display() {
+		
+		System.out.println(rollno + " " + name + " " + college);
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+
+ 
+<tr>
+<th> USERNAME </th>
+<td> ${param.username} </td>
+</tr>
+
+
+<tr>
+<th> EMAIL </th>
+<td> ${param.email} </td>
+</tr>
+
+<tr>
+<th> PHONE </th>
+<td> ${param.phone} </td>
+</tr>
+
+<tr>
+<th> ADDRESS </th>
+<td> ${param.address} </td>
+</tr>
+
+<tr>
+<th> Gender </th>
+<td> <%= request.getParameter("gender") %> </td>
+</tr>
+
+<tr>
+<th> EDUCATION </th>
+<td> <%= request.getParameter("education") %> </td>
+</tr>
+
+<tr>
+<th> PASSWORD </th>
+<td> ${param.password} </td>
+</tr>
+
+<tr>
+<th> CONFIRM PASSWORD </th>
+<td> ${param.conpassword} </td>
+</tr>
+
+</table>
+
+
+</body>
+</html>

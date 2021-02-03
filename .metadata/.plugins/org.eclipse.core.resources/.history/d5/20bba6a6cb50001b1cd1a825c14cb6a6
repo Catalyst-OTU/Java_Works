@@ -1,0 +1,25 @@
+package trials;
+
+import java.util.*;
+
+public class Tester {
+
+	public Tester() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+//		Basics1 ob = new Basics1();
+//		
+//		ob.getBasics1().msg();
+		
+		Random random = new Random();
+		
+		int x = random.nextInt();
+		
+		System.out.println(x);
+		
+	}
+
+}

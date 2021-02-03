@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+USERNAME: ${param.username} <br/>
+
+EMAIL: ${param.email} <br/>
+
+PHONE: ${param.phone} <br/>
+
+ADDRESS: ${param.address} <br/>
+
+Gender: <%= request.getParameter("gender") %> <br/>
+
+EDUCATION: <%= request.getParameter("education") %> <br/>
+
+PASSWORD: ${param.password} <br/>
+
+CONFIRM PASSWORD: ${param.conpassword} <br/>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+package stattic;
+
+public class Test {
+
+	public Test() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name = "Nana Kwsei";
+		String names = name.toUpperCase();
+		System.out.println(names);
+		
+		
+		
+		
+		
+		//  STATIC DOES NOT USE AN OBJECT BEFORE OUTING. STATIC USES CLASS TO OUTPUT
+		Stattic.show();
+		System.out.println(Stattic.add(12, 8));
+		System.out.println(Stattic.addition(10, 10));
+
+	}
+
+}

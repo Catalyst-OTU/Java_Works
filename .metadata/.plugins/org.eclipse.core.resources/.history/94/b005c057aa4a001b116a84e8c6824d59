@@ -1,0 +1,44 @@
+package trials;
+
+public class Basics1 {
+	
+	//  DECLARATION OF VARIABLES
+	private double id;
+	private String name;
+	private int age;
+
+	//CREATING OF THREE ARGUMENT CONSTRUCTOR
+	public Basics1(double id, String name, int age) {
+		
+//		INITIALIAZING OF VARIABLES
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	
+	//CREATING OF TWO ARGUMENT CONSTRUCTOR
+	public Basics1(String name, int age) {
+		
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void display() {
+		
+		System.out.println(id + " " + name + " " + age);
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		// CREATING OF OBJECTS
+		Basics1 ob1 = new Basics1(122.33, "Bismark", 20);
+		Basics1 ob2 = new Basics1("Nana", 22);
+		
+		ob1.display();
+		ob2.display();
+		
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>java</title>
+</head>
+<body style="background-color:aqua;">
+
+<h1 style="color: white;text-align:center;background-color:blue;">WELCOME TO JAVA EE WEBSITE</h1>
+<nav>
+     <ul>
+     	<li> HOME </li>
+     	<li> SERVICES </li>
+     	<li> CONTACT </li>
+     	<li> ABOUT </li>
+     </ul>
+</nav>
+ 
+Time on the Server is <%= new java.util.Date() %>
+
+</body>
+</html>

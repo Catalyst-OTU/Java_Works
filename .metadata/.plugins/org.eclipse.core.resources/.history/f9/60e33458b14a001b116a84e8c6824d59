@@ -1,0 +1,18 @@
+package trials;
+
+public class Tester {
+
+	public Tester() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void main(String[] args) {
+		
+		Basics1 ob1 = new Basics1(10, "Bismark", "CSD");
+		Basics1 ob2 = new Basics1(20, " Nana", "CCNA", 2000);
+		
+		ob1.display();
+		ob2.display();
+	}
+
+}

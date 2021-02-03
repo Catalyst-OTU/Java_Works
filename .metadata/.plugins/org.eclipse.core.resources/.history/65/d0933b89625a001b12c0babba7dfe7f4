@@ -1,0 +1,16 @@
+package student_mgt_system;
+
+public class JdbcConnection {
+	
+	String connection;
+	String preparedStatement;
+	String resultSet;
+
+	public JdbcConnection() {
+
+		
+	}
+	
+	
+
+}

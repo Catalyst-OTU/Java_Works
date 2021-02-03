@@ -1,0 +1,15 @@
+package com.aiti.model;
+
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import com.aiti.entities.Student;
+
+public class StudentModel {
+	
+	public List<Student> listAllStuden(DataSource datasource)
+
+	
+	return null;
+}

@@ -1,0 +1,124 @@
+package stream;
+
+import java.io.*;
+
+public class Files {
+
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BufferedInputStream input = null;
+		BufferedOutputStream output = null;
+		
+		try {
+			input = new BufferedInputStream(new FileInputStream("mine.txt"));
+			output = new BufferedOutputStream(new FileOutputStream("file.txt"));
+			
+			for(int i = input.read(); i != -1; i = input.read()) {
+				
+				output.write(i);
+			    
+			   
+			}
+			 System.out.flush();
+			
+		}catch(IOException io) {
+			
+			System.out.println(io);
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//	    InputStream input = null;
+//	    OutputStream output = null;
+//	    
+//	    try {
+//	    	
+//	    	input = new FileInputStream("mine.txt");
+//	    	output = new FileOutputStream("file.txt");
+//	    	
+//	    	byte[] data = input.readAllBytes();
+//	    	
+//	    	for(int i: data) {
+//	    		output.write(i);
+//	    		
+//	    		System.out.flush();
+//	    	}
+//	    	
+//	    	
+//	    }catch(IOException io) {
+//	    	
+//	    	System.out.println(io);
+//	    	
+//	    }finally {
+//	    	
+//	    	try {
+//	    		if((input.read()) != -1) {
+//	    			
+//	    			input.close();
+//	    		}
+//	    		if(output == null) {
+//	    			
+//	    			output.close();
+//	    		}
+//	    		
+//	    	}catch(IOException io) {
+//	    		
+//	    		System.out.println(io);
+//	    	}
+//	    }
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		     // WRITE ( OUTPUT STREAM)
+		//String name = "Bismark Otu";
+		//byte[] dat = name.getBytes();
+		
+		
+//		byte[] data = "I am Nana Kwesi".getBytes();
+//		
+//		try {
+//			
+//			System.out.write(data);
+//			
+//		} catch (IOException e) {
+//			
+//			System.out.println(e);
+//		}
+		
+	}
+
+}

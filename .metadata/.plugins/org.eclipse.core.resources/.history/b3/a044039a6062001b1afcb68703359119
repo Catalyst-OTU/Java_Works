@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Apply Leave</title>
+
+	    <style>
+        .conatiners{
+                  margin-left: 220px; 
+                  margin-top: 10x;
+                  background-color: aqua;
+                  border-radius: 20px;
+                  width: 470px;
+                  padding: 30px;
+                }
+                h2{color: blue; text-align: center; cursor: pointer;}
+                h2:hover{color: black;}
+    </style>
+    
+
+</head>
+<body>
+
+
+
+	<div class="conatiners">
+
+        <h2>EMPLOYEE LEAVE FORM</h2>
+        <hr>
+       
+    
+    <form action="applyleave.jsp" method="post">
+
+		<table>
+		
+			<tr>
+				<td> ENTER LEAVE ID :</td>
+				<td><input type="text" name="leaveid" class="form-control" placeholder="Enter Leave id" required></td>
+			</tr>
+			<tr>
+				<td> ENTER EMPLOYEE ID :</td>
+				<td><input type="text" name="empid" class="form-control" placeholder="Enter employee id" required></td>
+			</tr>
+			
+			<tr>
+				<td> ENTER DATE TO START LEAVE :</td>
+				<td><input type="date" name="applydate" class="form-control" placeholder="Enter date to start leave" required></td>
+			</tr>
+			
+			<tr>
+				<td> REASON :</td>
+				<td><textarea type="text" name="reason" cols="20" rows="10" placeholder="Please enter reason........"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td> DATE TO RESUME :</td>
+				<td><input type="date" name="resumedate" class="form-control" placeholder="Enter date to resume" required></td>
+			</tr>
+            
+            <tr class="text-right">
+                <td> <input type="submit" class="btn btn-primary" value="Submit"> </td>
+                <td> <input type="reset" class="btn btn-danger" value="Reset"> </td>
+            </tr>
+            
+            <tr>
+              <td> <p class="text-center">Return to HomePage? <a href="userpage1.jsp">HomePage</a></p> </td>
+            </tr>
+
+		</table>
+
+
+    </form>
+    
+</div>
+
+
+</body>
+</html>

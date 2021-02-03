@@ -1,0 +1,68 @@
+package tester;
+
+import java.util.*;
+
+//Display food menu to user. User will select items from menu along with the quantity.
+//Hard code food prices. (eg 1. fufu.......20 2. banku .......10 . Generate Bill ) When user enters 'Generate Bill' option, display total bill & exit.
+//Create above class in "tester" package
+
+public class Food_Menu {
+	
+	private String Fufu;
+	private String Banku;
+	private String Rice;
+
+//
+//	public Food_Menu(String Fufu, String Banku, String Rice) {
+//		
+//		this.Fufu = Fufu;
+//		this.Banku = Banku;
+//		this.Rice = Rice;
+//
+//	}
+	
+	public void displayFufu() {
+		
+		System.out.println("Fufu and Groundnut Soup          Gh$15 \n");
+	}
+	
+	public String fufu() {
+		
+		return Fufu;
+	}
+	
+	public String banku() {
+		
+		return Banku;
+	}
+	
+	public String rice() {
+		
+		return Rice;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Food_Menu [Fufu=" + Fufu + ", Banku=" + Banku + ", Rice=" + Rice + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

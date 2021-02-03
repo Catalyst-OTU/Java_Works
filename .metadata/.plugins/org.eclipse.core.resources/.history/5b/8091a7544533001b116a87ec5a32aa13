@@ -1,0 +1,68 @@
+package exception;
+
+import java.util.Scanner;
+
+public class TryException {
+
+	public TryException() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		try {
+			
+			int num;
+			int num1;
+			int num2;
+			
+			num1 = input.nextInt();
+			num2 = input.nextInt();
+			
+			try {
+				
+				num = num1 / num2;
+				System.out.println(num);
+			}catch(ArithmeticException ae) {
+				
+				System.out.println("The first Exception is" + ae);
+				System.out.println("Please your denomintor should be greater than zero");
+			}
+		}catch(ArithmeticException ae) {
+			
+			System.out.println("The second Exception is " + ae);
+			System.out.println("Please your denomintor should be greater than zero");
+		}
+		
+		
+		
+//		int a = 34;
+//		int b = 21;
+//		
+//		try {
+//			
+//			int z = a + b;
+//			
+//			try {
+//				
+//				int p = z + 2;
+//				System.out.println(p);
+//				
+//			}catch(ArithmeticException ae) {
+//				
+//				System.out.println("First Exception" + ae);
+//			}
+//			
+//		}catch(ArithmeticException ae) {
+//			
+//			System.out.println("This is my Second Exception" + ae); 
+//		}
+		
+
+	}
+
+}

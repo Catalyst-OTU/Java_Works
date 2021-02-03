@@ -1,0 +1,18 @@
+INDEX VERSION 1.4+C:\Users\BISMARK  OTU\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2901444638.index
+3821256357.index
+3737428319.index
+3979822388.index
+4041556332.index
+2935849019.index
+1613806278.index
+660285277.index
+572991402.index
+4108234302.index
+4250656711.index
+660285277.index
+451785530.index
+2093199121.index
+3320015288.index
+2934920124.index
+3655069726.index

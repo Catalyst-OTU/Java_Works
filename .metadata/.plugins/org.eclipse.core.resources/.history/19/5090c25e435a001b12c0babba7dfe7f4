@@ -1,0 +1,67 @@
+package student_mgt_system;
+
+import java.sql.*;
+import java.util.*;
+
+public class Try extends Student {
+	
+	static Connection connection;
+	static Statement Statement;
+	ResultSet resultSet = null;
+	String url = "jdbc:mysql://localhost:3306/mydb";
+
+
+	public Try() {
+		
+
+		
+		try {
+			
+			connection = DriverManager.getConnection(url, "root", "catalyst1006");
+			
+			Statement = connection.createStatement();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+//	public void addStudent() throws SQLException {
+//		
+//	    int studentid;
+//		String studentName;
+//		String address;
+//		String studentClass;
+//		int marks;
+//		
+//		
+//	}
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		Student student = new Student();
+		
+		try {
+			
+			
+			System.out.println("Please enter\n StudentID, StudentName, Address, Class, Marks");
+			student.addStudent(input.nextInt(), input.next(), input.next(), input.next(), input.nextInt());
+			Statement.executeUpdate("insert into studentmgt values ('" + student.studentid + "','"+ student.studentName + "','"+ student.address + "','"+ student.studentClass + "','"+ student.marks + "')");
+			System.out.println("1 Row is Inserted Successfully.....");
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+input.close();
+
+	}
+
+}

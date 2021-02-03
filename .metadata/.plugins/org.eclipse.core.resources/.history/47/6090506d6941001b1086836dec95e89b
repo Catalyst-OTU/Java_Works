@@ -1,0 +1,62 @@
+package assign7;
+
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args)throws StudentHandlingException {
+		// TODO Auto-generated method stub
+		
+		
+		int count = 0;
+		
+		Student[] std = new Student[count];
+		
+		std[count] = new Student("dac-001", "Bismark", "Bismark@gmail.com", 100, "CSD");
+		std[1] = new Student("dac-002", "Nana", "Nana@gmail.com", 89, "CCNA");
+		std[2] = new Student("dac-003", "Kwesi", "Kwesi@gmail.com", 90, "ICDL");
+//		std[3] = new Student("dac-004", "Otu", "Otu@gmail.com", 79, "DBC");
+		
+		
+		try (Scanner input = new Scanner(System.in)){
+			
+System.out.println("Enter the ff information\n 1. prn number\n 2. your name\n 3. your email\n 4. marks\n 5. Course ");
+			
+				String prn = input.next();
+				String name = input.next();
+				String email = input.next();
+				int marks = input.nextInt();
+				String course = input.next();
+				
+//				for(int i = 0; i < count; i++)
+				
+				if(std[count].equals(prn)) {
+					
+					throw new StudentHandlingException("Error message");
+					
+				}else {
+					
+					std[3] = new Student(prn, name, email, marks, course);
+					
+					System.out.println("Success");
+				}
+			
+			
+					for(Student i : std) {
+						
+						if(std != null)
+						System.out.println(i);
+					}
+			
+
+		}catch(Exception e) {
+			
+			System.out.println(e);
+		}
+		
+
+	}
+	
+
+
+}

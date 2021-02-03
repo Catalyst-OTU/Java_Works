@@ -1,0 +1,9 @@
+package stattic;
+
+public class Stattic {
+
+	public Stattic() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,48 @@
+package com.aiti.model;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import javax.sql.DataSource;
+import com.aiti.entities.Student;
+
+
+public class StudentModel {
+	
+	public List<Student> listAllStudent(DataSource datasource){
+		
+		List<Student> listStudents = new ArrayList<>();
+		
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		try {
+			
+			conn = datasource.getConnection();
+			stmt = conn.createStatement();
+			String sql = "Select * from students";
+			
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				
+listStudents.add(new Student(rs.getInt("student_id"), rs.getString("firstName"), rs.getString("lastName"), rs.getString("email")));
+			}
+					
+			
+			
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+		return listStudents;
+		
+	} 
+
+	
+	
+}

@@ -1,0 +1,9 @@
+package assign7;
+
+public class StudentHandlingException {
+
+	public StudentHandlingException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

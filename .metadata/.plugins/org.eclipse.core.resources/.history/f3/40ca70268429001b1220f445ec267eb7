@@ -1,0 +1,71 @@
+package assign1;
+
+import java.util.Scanner;
+
+public class TestCalculator {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		Calculator count = new Calculator();
+		
+		System.out.println("Please choose your prefered operator: " + "\n 1. Add  \n 2. Subtract  \n 3. Multiply  \n 4. Divide  \n 5. Exit");
+		
+		int choice = input.nextInt();
+		
+		switch(choice) {
+		
+		     case 1:
+		     {
+		    	 System.out.println("Please enter first Number: ");
+		    	 int firstNumber = input.nextInt();
+		    	 System.out.println("Please enter second number: ");
+		    	 int secondNumber = input.nextInt();
+		    	 count.setfirstNumber(firstNumber);
+		    	 count.setsecondNumber(secondNumber);
+		    	 System.out.println("Your Addition answer is: " + count.add());
+		     };break;
+		     
+		     case 2:
+		     {
+		    	 System.out.println("Please enter first Number: ");
+		    	 int firstNumber = input.nextInt();
+		    	 System.out.println("Please enter second number: ");
+		    	 int secondNumber = input.nextInt();
+		    	 count.setfirstNumber(firstNumber);
+		    	 count.setsecondNumber(secondNumber);
+		    	 System.out.println("Your Subtraction answer is: " + count.subtract());
+		     };break;
+		     
+		     case 3:
+		     {
+		    	 System.out.println("Please enter first Number: ");
+		    	 int firstNumber = input.nextInt();
+		    	 System.out.println("Please enter second number: ");
+		    	 int secondNumber = input.nextInt();
+		    	 count.setfirstNumber(firstNumber);
+		    	 count.setsecondNumber(secondNumber);
+		    	 System.out.println("Your Multiplication answer is: " + count.multiply());
+		     };break;
+		     
+		     case 4:
+		     {
+		    	 System.out.println("Please enter first Number: ");
+		    	 int firstNumber = input.nextInt();
+		    	 System.out.println("Please enter second number: ");
+		    	 int secondNumber = input.nextInt();
+		    	 count.setfirstNumber(firstNumber);
+		    	 count.setsecondNumber(secondNumber);
+		    	 System.out.println("Your Division answer is: " + count.divide());
+		     };break;
+		     
+		     default: System.out.println("Goodbye");
+		
+		}
+		
+	}
+	
+	
+
+}

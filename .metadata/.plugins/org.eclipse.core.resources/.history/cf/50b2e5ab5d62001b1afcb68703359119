@@ -1,0 +1,52 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Profile</title>
+</head>
+<body>
+
+<%
+
+try{
+	
+	String id = (String)session.getAttribute("empid");
+	
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "catalyst1006");
+	PreparedStatement ps = conn.prepareStatement("select ems_login.empid, ems_login.user, ems_login.pass, ems_login.email, leave_table.applydate, leave_table.reasons, leave_table.resumedate FROM ems_login, leave_table WHERE ems_login.empid = leave_table.empid ORDER BY ems_login.empid");
+	ps.setString(1, id);
+	ResultSet rs = ps.executeQuery();
+	
+	if(rs.next()) {
+		
+		
+		out.println("<h2> EMPLOYEE PROFILE </h2>");
+		
+		out.println("EMPLOYEE ID : " + " " + rs.getString(1) + "<br/>" + "<br/>"); 
+		out.println("USER NAME : " + " " + rs.getString(2) + "<br/>" + "<br/>");
+		out.println("PASSWORD : " + " " + rs.getString(3) + "<br/>" + "<br/>");
+		out.println("EMAIL : " + " " + rs.getString(4) + "<br/>" + "<br/>");
+		out.println("LEAVE ID : " + " " + rs.getString(5) + "<br/>" + "<br/>");
+		out.println("APPLY DATE : " + " " + rs.getString(6) + "<br/>" + "<br/>");
+		out.println("REASONS : " + " " + rs.getString(7) + "<br/>" + "<br/>");
+		out.println("RESUME DATE : " + " " + rs.getString(8));
+	}
+
+	
+}
+
+catch (Exception e) {
+
+	out.println(e.getMessage());
+}
+
+%>
+
+</body>
+</html>

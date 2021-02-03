@@ -1,0 +1,9 @@
+package student_mgt_system;
+
+public class Student {
+
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
